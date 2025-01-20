@@ -4,7 +4,18 @@
     font-weight: 400;
     font-style: normal;
   }
+  *{
+    margin: 0;
+
+  }
 /* all share style */
+.color-primary{
+    color: #FEA301;
+}
+.color-secondary{
+    color: #01ACFD;
+}
+
 .primary-btn{
     background-color: #FEA301;
     color: white;
@@ -25,9 +36,24 @@
 }
 .nav-logo{
     display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo{
+    width: 62px;
+    height: 62px;
+}
+.nav-title{
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
 }
 .nav-menu{
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
 }
 .nav-menu > li > a{
     text-decoration: none;
@@ -35,5 +61,74 @@
 .nav-menu > li{
     list-style: none;
 }
- 
+.fa-bars{
+    color: black;
+    font-size: 30px;
+    display: none;
+}
+.menu-item1{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #FEA301;
+}
+.menu-item2{
+    color: #01ACFD;
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 30px;
+}
+.menu-item3{
+    color: #05D4DF;
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 30px;
+}
+.menu-item4{
+    color: #5D58EF;
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 30px;
+}
+.nav-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+
+ /* Mobile device styles */
+ @media screen and (max-width:576px) {
+    /* nav style in mobile */
+    .nav{
+        height: 70px;
+    }
+    .logo{
+        width: 46px;
+        height: 46px;
+        border: 1px solid #FEA301;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-title{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    .fa-bars{
+        padding: 2px 5px;
+        display: block;
+        border: 1px solid #FEA301;
+    }
+    .nav-button > a{
+        text-decoration: none;
+    }
+    .header{
+        border: 1px solid #FEA301;
+    }
+ }
   
