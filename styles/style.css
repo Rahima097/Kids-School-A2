@@ -9,6 +9,13 @@
 
   }
 /* all share style */
+.section-title{
+    color: #000000;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 57px;
+    text-align: center;
+}
 .color-primary{
     color: #FEA301;
 }
@@ -152,6 +159,61 @@
     width: 100%;
     /* height: 100vh; */
 }
+ /* standard curriculum styles */
+ .standard-curriculum{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0px;
+    margin: 0 auto;
+ }
+ .curriculum-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0px;
+    gap: 28px;
+    width: 80%;
+    margin: 0 auto;
+ }
+ .curriculum-icon{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5px;
+ }
+ .curriculum-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    border-radius: 19px;
+    background-image: linear-gradient(180deg, #DEF5FF, #ffffff);
+ }
+ .curriculum-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    border-radius: 19px;
+    background-image: linear-gradient(180deg, #FFF4DC, #ffffff);
+ }
+ .curriculum-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    border-radius: 19px;
+    background-image: linear-gradient(180deg, #F2E8FF, #ffffff);
+ }
 
 
 
