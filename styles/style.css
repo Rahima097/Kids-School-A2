@@ -46,10 +46,10 @@
     border: none;
 }
 /* nav style */
-/* .header{
+.header{
     width: 100%;
     margin: 0 auto;
-} */
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -113,11 +113,6 @@
     font-size: 20px;
     font-weight: medium;
     line-height: 30px;
-}
-.nav-button{
-    display: flex;
-    justify-content: end;
-    align-items: center;
 }
 /* banner section styles */
 .banner{
@@ -486,13 +481,36 @@
     height: 40px;
     border-radius: 4px;
 }
+/* marquee style */
+.marquee{
+    background-color: #F0AA00;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.marquee-text{
+    color: #DEF5FF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.marquee-heading{
+    width: 15%;
+    background-color: #f00000;
+    padding: 10px 10px;
+    color: #DEF5FF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
 
 
  /* Mobile device styles */
  @media screen and (max-width:576px) {
     /* nav style in mobile */
     .nav{
-        width: 95%;
         height: 70px;
     }
     .logo{
@@ -596,7 +614,7 @@
         display: none;
      }
      .stories-cards-all{
-        width: 95%;
+        width: 92%;
         margin: 0 auto;
      }
      .stories-cards-container{
@@ -640,14 +658,14 @@
         padding: 40px 0px;
      }
      .footer-container{
-        width: 95%;
+        width: 92%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     .footer-logo{
-        width: 100%;
+        width: 92%;
     }
     .footer-img{
         width: 70px;
@@ -661,11 +679,11 @@
         font-size: 16px;
     }
     .footer-menu{
-        width: 100%;
+        width: 92%;
 
     }
     .footer-social{
-        width: 100%;
+        width: 92%;
     }
     .footer-menu > ul > li{
         font-size: 16px;
@@ -675,13 +693,22 @@
         width: 33px;
         height: 33px;
     }
-
-
-
-
-
-
-
+/* marquee style for mobile */
+.marquee-text{
+    color: #DEF5FF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.marquee-heading{
+    width: 28%;
+    padding: 5px 0px;
+    color: #DEF5FF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
 
  }
   
