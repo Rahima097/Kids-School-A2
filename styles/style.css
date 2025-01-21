@@ -46,8 +46,7 @@
     border: none;
 }
 /* nav style */
-.header{
-    width: 100%;
+#header{
     margin: 0 auto;
 }
 .nav{
@@ -509,8 +508,18 @@
 
  /* Mobile device styles */
  @media screen and (max-width:576px) {
+    *{
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
     /* nav style in mobile */
+    #header{
+        /* margin: 0 auto; */
+        border: 1px solid #FEA301;
+    }
     .nav{
+        width: 92%;
+        margin: 0 auto;
         height: 70px;
     }
     .logo{
@@ -534,11 +543,6 @@
     }
     .nav-button > a{
         text-decoration: none;
-    }
-    .header{
-        margin: 0 auto;
-        width: 100%;
-        border: 1px solid #FEA301;
     }
     /* banner section style for mobile */
     .banner{
@@ -688,6 +692,7 @@
     .footer-menu > ul > li{
         font-size: 16px;
         font-weight: 500;
+        margin-left: 0px;
     }
     .social > img{
         width: 33px;
@@ -709,6 +714,208 @@
     line-height: 20px;
     text-align: center;
 }
+ }
+ /* medium device or tablet device styles */
+ @media screen and (min-width:576px) and (max-width:992px) {
+    *{
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    /* nav style in mobile */
+    #header{
+        margin: 0 auto;
+        border: 1px solid #FEA301;
+    }
+    .nav{
+        height: 70px;
+    }
+    .logo{
+        width: 46px;
+        height: 46px;
+        border: 1px solid #FEA301;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-title{
+        display: block;
+    }
+    .menu-button{
+        display: none;
+    }
+    .fa-bars{
+        padding: 2px 5px;
+        display: block;
+        border: 1px solid #FEA301;
+    }
+    .nav-button > a{
+        text-decoration: none;
+    }
 
+    /* banner section style for medium device or tablet */
+    .banner{
+        margin: 0px 0px;
+        padding: 5px 10px;
+    }
+    .banner-container{
+        justify-content: center;
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px 0px;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .banner-content{
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
+    .secondary-btn{
+        width: 161px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 6px 24px;
+        border-radius: 8px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    /* standard curriculum style for tablet */
+    .standard-curriculum{
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    .section-title{
+        font-size: 30px;
+        line-height: auto;
+    }
+    .curriculum-card{
+        flex-direction: row;
+        width: 92%;
+        gap: 15px;
+        padding: 10px 0px;
+    }
+    .curriculum-icon{
+        display: none;
+    }
+    .curriculum-card-title{
+        font-size: 18px;
+        line-height: 20px;
+     }
+     .curriculum-card-description{
+        font-size: 12px;
+        line-height: 17px;
+     }
+     .curriculum-card1{
+        gap: 15px;
+        padding: 40px 21px;
+     }
+     .curriculum-card-button1, .curriculum-card-button2, .curriculum-card-button3{
+        font-size: 10px;
+        line-height: 19px;
+     }
+    /* our stories section styles for medium device */
+    .stories-cards-1st{
+        display: none;
+     }
+     .stories-cards-all{
+        width: 92%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     }
+     .stories-cards-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0 auto;
+        padding: 40px 0px;
+        gap: 19px;
+     }
+     .stories-card-button2, .stories-card-button3, .stories-card-button4, .stories-card-button5{
+        width: 103px;
+        height: 22px;
+        font-size: 9px;
+        line-height: 17px;
+        margin-top: -15px;
+     }
+     .stories-card2-content, .stories-card3-content, .stories-card4-content, .stories-card5-content{
+        padding: 0px 20px 0px 20px;
+     }
+     .stories-card-title{
+        font-size: 9px;
+        line-height: 17px;
+        padding: 15px 0px;
+     }
+     .our-stories{
+        padding: 30px 0px;
+     }
+     #card3, #card4{
+        display: block;
+     }
+     .secondary-btn{
+        width: 138px;
+        height: 40px;
+        font-size: 16px;
+    }
+    /* marquee section style for medium device or tablet */
+    .marquee-heading{
+        font-size: 20px;
+        line-height: 25px;
+        width: 35%;
+    }
+    /* footer section styles for tablet */
+    .footer{
+        padding: 30px 0px;
+     }
+     .footer-container{
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer-logo{
+        width: 40%;
+    }
+    .footer-img{
+        width: 70px;
+        height: 70px;
+    }
+    .footer-site-title{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .footer-description{
+        font-size: 14px;
+    }
+    .footer-menu{
+        width: 30%;
+
+    }
+    .footer-social{
+        width: 30%;
+    }
+    .footer-menu > ul > li{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer-menu-title, .social-title{
+        font-size: 20px;
+    }
+    .social > img{
+        width: 30px;
+        height: 30px;
+    }
  }
   
