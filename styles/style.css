@@ -554,7 +554,8 @@
         flex-direction: column-reverse;
         gap: 30px;
         padding: 20px 0px;
-        width: 100%;
+        width: 92%;
+        margin: 0 auto;
     }
     .banner-content{
         justify-content: center;
@@ -577,7 +578,7 @@
         border-radius: 8px;
     }
     .banner-img{
-        width: 100%;
+        width: 92%;
     }
     /* standard curriculum style for mobile */
     .standard-curriculum{
@@ -785,7 +786,7 @@
         padding: 6px 24px;
         border-radius: 8px;
     }
-    .banner-img{
+    .banner-image{
         width: 100%;
     }
     /* standard curriculum style for tablet */
