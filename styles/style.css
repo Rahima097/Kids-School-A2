@@ -291,13 +291,13 @@
     gap: 19px;
  }
  .stories-cards-1st{
-    width: 40%;
+    width: 42%;
     display: flex;
     justify-content: baseline;
     align-items: baseline;
  }
  .stories-cards-all{
-    width: 60%;
+    width: 58%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 19px;
@@ -312,33 +312,104 @@
     font-size: 24px;
     font-weight: bold;
     line-height: 38px;
+    margin: 40px 0px;
  }
  .stories-card-title{
     color: #000000;
     font-size: 16px;
     font-weight: bold;
     line-height: 28px;
+    padding: 19px 0px;
  }
  .stories-card-description{
     font-size: 16px;
     font-weight: medium;
     line-height: 28px;
  }
- .stories-card1{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 16px;
- }
  .stories-card1-content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 30px;
+    padding: 0px 30px 40px 30px;
  }
  .stories-view-button{
     text-align: center;
+ }
+ .stories-card1{
+    background-color: white;
+    border-radius: 16px;
+ }
+.stories-card2, .stories-card3, .stories-card4, .stories-card5{
+    background-color: white;
+    border-radius: 16px;
+ }
+ .stories-card2-content, .stories-card3-content, .stories-card4-content, .stories-card5-content{
+    padding: 0px 30px 0px 30px;
+ }
+ .stories-card-button1{
+    background-color: #3CD8E8;
+    width: 174px;
+    height: 47px;
+    color: #ffffff;
+    font: 15px;
+    font-weight: medium;
+    line-height: 29px;
+    border: none;
+    border-radius: 48px;
+    margin-top: -70px;
+    position: absolute;
+ }
+ .stories-card-button2{
+    background-color: #95B226;
+    width: 174px;
+    height: 36px;
+    color: #ffffff;
+    font: 15px;
+    font-weight: medium;
+    line-height: 29px;
+    border: none;
+    border-radius: 48px;
+    margin-top: -25px;
+    position: absolute;
+ }
+ .stories-card-button3{
+    background-color: #5D58F0;
+    width: 174px;
+    height: 36px;
+    color: #ffffff;
+    font: 15px;
+    font-weight: medium;
+    line-height: 29px;
+    border: none;
+    border-radius: 48px;
+    margin-top: -25px;
+    position: absolute;
+ }
+ .stories-card-button4{
+    background-color: #95B226;
+    width: 174px;
+    height: 36px;
+    color: #ffffff;
+    font: 15px;
+    font-weight: medium;
+    line-height: 29px;
+    border: none;
+    border-radius: 48px;
+    margin-top: -25px;
+    position: absolute;
+ }
+ .stories-card-button5{
+    background-color: #95B226;
+    width: 174px;
+    height: 36px;
+    color: #ffffff;
+    font: 15px;
+    font-weight: medium;
+    line-height: 29px;
+    border: none;
+    border-radius: 48px;
+    margin-top: -25px;
+    position: absolute;
+ }
+ #card3, #card4{
+    display: none;
  }
 
 
@@ -413,6 +484,10 @@
         width: 100%;
     }
     /* standard curriculum style for mobile */
+    .standard-curriculum{
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
     .section-title{
         font-size: 26px;
         line-height: auto;
@@ -439,6 +514,45 @@
         padding: 36px 21px;
      }
      /* our stories style for mobile */
+     .stories-cards-1st{
+        display: none;
+     }
+     .stories-cards-all{
+        width: 95%;
+        margin: 0 auto;
+     }
+     .stories-cards-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0 auto;
+        padding: 40px 0px;
+        gap: 19px;
+     }
+     .stories-card-button2, .stories-card-button3, .stories-card-button4, .stories-card-button5{
+        width: 103px;
+        height: 22px;
+        font-size: 9px;
+        line-height: 17px;
+        margin-top: -15px;
+     }
+     .stories-card2-content, .stories-card3-content, .stories-card4-content, .stories-card5-content{
+        padding: 0px 20px 0px 20px;
+     }
+     .stories-card-title{
+        font-size: 9px;
+        line-height: 17px;
+        padding: 15px 0px;
+     }
+     .our-stories{
+        padding: 40px 0px;
+     }
+     #card3, #card4{
+        display: block;
+     }
+
 
 
 
