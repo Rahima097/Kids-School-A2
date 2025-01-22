@@ -8,7 +8,12 @@
     margin: 0;
 
   }
+  
 /* all share style */
+.max-width{
+    max-width: 1160px;
+    margin: 0 auto;
+  }
 .section-title{
     color: #000000;
     font-size: 46px;
@@ -46,16 +51,11 @@
     border: none;
 }
 /* nav style */
-#header{
-    margin: 0 auto;
-}
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 100px;
-    margin: 0 auto;
+    height: 105px;
 }
 .nav-logo{
     display: flex;
@@ -126,7 +126,6 @@
     margin: 0 auto;
     padding: 0px 0px;
     gap: 50px;
-    width: 80%;
 }
 .banner-content{
     display: flex;
@@ -164,11 +163,9 @@
     text-align: center;
     padding: 80px 0px;
     gap: 28px;
-    width: 80%;
     margin: 0 auto;
  }
  .curriculum-icon{
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -261,7 +258,6 @@
  }
  /* our stories style */
  .our-stories{
-    width: 100%;
     margin: 0 auto;
     padding: 60px 0px;
     background-image: url(../assets/bg.png), linear-gradient(180deg, #ffffff, #fea1015b);
@@ -270,7 +266,6 @@
     background-size: cover;
  }
  .stories-cards-container{
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -407,7 +402,7 @@
     margin: 0 auto;
 }
 .footer-container{
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -514,12 +509,10 @@
     }
     /* nav style in mobile */
     #header{
-        /* margin: 0 auto; */
+        padding: 0px 10px;
         border: 1px solid #FEA301;
     }
     .nav{
-        width: 92%;
-        margin: 0 auto;
         height: 70px;
     }
     .logo{
@@ -547,17 +540,17 @@
     /* banner section style for mobile */
     .banner{
         margin: 0px 0px;
-        padding: 5px 10px;
+        padding: 0px 0px;
     }
     .banner-container{
         justify-content: center;
         flex-direction: column-reverse;
         gap: 30px;
         padding: 20px 0px;
-        width: 92%;
-        margin: 0 auto;
     }
     .banner-content{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -566,9 +559,11 @@
     .banner-title{
         font-size: 32px;
         line-height: 38px;
+        padding: 0px 10px;
     }
     .banner-description{
         font-size: 14px;
+        padding: 0px 10px;
     }
     .secondary-btn{
         width: 161px;
@@ -578,12 +573,13 @@
         border-radius: 8px;
     }
     .banner-img{
-        width: 92%;
+        width: calc(100%-20px);
+        padding: 0px 10px;
     }
     /* standard curriculum style for mobile */
     .standard-curriculum{
-        padding-top: 40px;
-        padding-bottom: 0px;
+        padding: 40px 10px 0px 10px;
+        width: calc(100%-20px) ;
     }
     .section-title{
         font-size: 26px;
@@ -591,7 +587,6 @@
     }
     .curriculum-card{
         flex-direction: column;
-        width: 92%;
         gap: 22px;
         padding: 20px 0px;
     }
@@ -608,7 +603,7 @@
      }
      .curriculum-card1{
         gap: 22px;
-        padding: 36px 21px;
+        padding: 36px 20px;
      }
      .curriculum-card-button1, .curriculum-card-button2, .curriculum-card-button3{
         font-size: 10px;
@@ -619,17 +614,17 @@
         display: none;
      }
      .stories-cards-all{
-        width: 92%;
-        margin: 0 auto;
+        width: 100%;
+        
      }
      .stories-cards-container{
-        width: 100%;
+        width: calc(100%-20px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
         margin: 0 auto;
-        padding: 40px 0px;
+        padding: 40px 10px;
         gap: 19px;
      }
      .stories-card-button2, .stories-card-button3, .stories-card-button4, .stories-card-button5{
@@ -660,35 +655,40 @@
     }
      /* footer section style for mobile */
      .footer{
-        padding: 40px 0px;
+        width: 100%-20px;
+        padding: 40px 10px;
      }
      .footer-container{
-        width: 92%;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: calc(100%-20px);
+        padding: 0px 0px;
+        margin: 0px 0px;
     }
     .footer-logo{
-        width: 92%;
+        width:80%;
     }
-    .footer-img{
-        width: 70px;
-        height: 70px;
+    .footer-logo-and-title{
+        width: 50%;
+    }
+    .footer-text{
+        width: 100%;
     }
     .footer-site-title{
-        font-size: 35px;
+        font-size: 32px;
         line-height: 33px;
     }
     .footer-description{
         font-size: 16px;
+        width: 100%;
     }
     .footer-menu{
-        width: 92%;
+        width: calc(100% - 20px);
 
     }
     .footer-social{
-        width: 92%;
+        width: calc(100% - 20px);
     }
     .footer-menu > ul > li{
         font-size: 16px;
@@ -729,6 +729,7 @@
     }
     .nav{
         height: 70px;
+        padding: 0px 20px;
     }
     .logo{
         width: 46px;
@@ -763,14 +764,14 @@
         flex-direction: row;
         gap: 30px;
         padding: 20px 0px;
-        width: 92%;
-        margin: 0 auto;
+        /* width: 92%;
+        margin: 0 auto; */
     }
     .banner-content{
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: start;
         text-align: start;
-        width: 100%;
     }
     .banner-title{
         font-size: 35px;
@@ -778,13 +779,6 @@
     }
     .banner-description{
         font-size: 14px;
-    }
-    .secondary-btn{
-        width: 161px;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 6px 24px;
-        border-radius: 8px;
     }
     .banner-image{
         width: 100%;
